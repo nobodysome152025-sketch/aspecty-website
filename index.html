@@ -1,0 +1,420 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ASPECTY offers creative copywriting, video editing, website development and logo design services.">
+<title>ASPECTY | Creative Digital Studio</title>
+
+<style>
+:root {
+  --bg: #080b12;
+  --panel: #111722;
+  --text: #f5f7ff;
+  --muted: #a6b0c3;
+  --accent: #67e8f9;
+  --border: #263244;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+
+a { color: inherit; text-decoration: none; }
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(8,11,18,.94);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+
+nav {
+  max-width: 1120px;
+  margin: auto;
+  padding: 18px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.logo span { color: var(--accent); }
+
+.navlinks {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.navlinks a:hover { color: var(--accent); }
+
+.container {
+  max-width: 1050px;
+  margin: auto;
+  padding: 70px 22px;
+}
+
+.hero {
+  min-height: 570px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.tag {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: clamp(45px, 8vw, 86px);
+  line-height: 1.06;
+  margin: 20px 0;
+  letter-spacing: -3px;
+}
+
+h1 span { color: var(--accent); }
+
+h2 {
+  font-size: clamp(28px, 5vw, 40px);
+  margin: 12px 0 16px;
+  line-height: 1.2;
+}
+
+h3 { margin-bottom: 10px; }
+
+p { color: var(--muted); margin-bottom: 15px; }
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 7px;
+  font-weight: bold;
+  background: var(--accent);
+  color: #071017;
+  border: 1px solid var(--accent);
+}
+
+.btn.secondary {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--border);
+}
+
+section { scroll-margin-top: 80px; }
+
+.section-head { margin-bottom: 28px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: var(--panel);
+  padding: 25px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.card .symbol {
+  font-size: 26px;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.card p { margin-bottom: 0; }
+
+.rule-list {
+  padding-left: 22px;
+  color: var(--muted);
+}
+
+.rule-list li { margin: 10px 0; }
+
+.highlight {
+  border-left: 3px solid var(--accent);
+  padding: 18px 22px;
+  background: var(--panel);
+  margin: 20px 0;
+}
+
+.email {
+  color: var(--accent);
+  overflow-wrap: anywhere;
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 28px 22px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+footer a { margin: 0 8px; }
+
+@media (max-width: 650px) {
+  nav { align-items: flex-start; flex-direction: column; }
+  .navlinks { gap: 12px; }
+  .grid { grid-template-columns: 1fr; }
+  .container { padding: 50px 20px; }
+  .hero { min-height: 470px; }
+  h1 { letter-spacing: -2px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="#home" class="logo">ASPECT<span>Y</span></a>
+    <div class="navlinks">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#logo-rules">Logo Rules</a>
+      <a href="#terms">Terms</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="container hero" id="home">
+  <div class="tag">Creative minds. Digital solutions.</div>
+  <h1>Build your brand.<br>Make an <span>impact.</span></h1>
+  <p>
+    Welcome to ASPECTY — a creative digital studio providing
+    copywriting, video editing, website development and logo design
+    to help individuals and businesses stand out online.
+  </p>
+  <div class="buttons">
+    <a class="btn" href="#services">Explore Services ↗</a>
+    <a class="btn secondary" href="#contact">Work With Us</a>
+  </div>
+</section>
+
+<section class="container" id="services">
+  <div class="section-head">
+    <div class="tag">What we do</div>
+    <h2>Our Services</h2>
+    <p>Creative work designed around your goals and vision.</p>
+  </div>
+
+  <div class="grid">
+    <article class="card">
+      <div class="symbol">✍</div>
+      <h3>Copywriting</h3>
+      <p>Engaging website content, product descriptions,
+      promotional writing and creative text for your brand.</p>
+    </article>
+
+    <article class="card">
+      <div class="symbol">▶</div>
+      <h3>Video Editing</h3>
+      <p>Polished video edits, social media content,
+      transitions, captions and promotional videos.</p>
+    </article>
+
+    <article class="card">
+      <div class="symbol">⌘</div>
+      <h3>Website Development</h3>
+      <p>Responsive landing pages, portfolio websites
+      and attractive digital experiences for your business.</p>
+    </article>
+
+    <article class="card">
+      <div class="symbol">✦</div>
+      <h3>Logo Design</h3>
+      <p>Distinctive logos and visual branding concepts
+      that help communicate your brand identity.</p>
+    </article>
+  </div>
+</section>
+
+<section class="container" id="logo-rules">
+  <div class="tag">Brand identity</div>
+  <h2>Logo Usage Rules</h2>
+  <p>These rules help maintain a consistent and professional
+  ASPECTY brand identity.</p>
+
+  <div class="grid">
+    <article class="card">
+      <h3>✓ Correct Usage</h3>
+      <ul class="rule-list">
+        <li>Use the original logo artwork whenever available.</li>
+        <li>Keep the logo proportions unchanged.</li>
+        <li>Use a clear background with sufficient contrast.</li>
+        <li>Leave enough space around the logo.</li>
+        <li>Use approved versions for light and dark backgrounds.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3>✕ Incorrect Usage</h3>
+      <ul class="rule-list">
+        <li>Do not stretch, squash or distort the logo.</li>
+        <li>Do not change its colours without approval.</li>
+        <li>Do not add unapproved shadows or effects.</li>
+        <li>Do not place it on a confusing background.</li>
+        <li>Do not claim ASPECTY branding as your own.</li>
+      </ul>
+    </article>
+  </div>
+
+  <div class="highlight">
+    <strong>Logo ownership:</strong>
+    ASPECTY's original branding remains the property of its
+    respective owner. Clients receive rights to commissioned
+    logos according to their agreed project terms.
+  </div>
+</section>
+
+<section class="container" id="terms">
+  <div class="tag">Please read carefully</div>
+  <h2>Terms of Service</h2>
+  <p>Last updated: October 2026</p>
+
+  <div class="card">
+    <h3>1. Services</h3>
+    <p>ASPECTY provides creative and digital services, including
+    copywriting, video editing, website development and logo design.
+    The exact scope of each project is agreed with the client.</p>
+
+    <h3>2. Orders and Payments</h3>
+    <p>Pricing, deadlines, deliverables and payment arrangements
+    must be agreed before work begins. Any deposit, refund or
+    cancellation conditions should be confirmed in writing.</p>
+
+    <h3>3. Revisions</h3>
+    <p>The number of revisions and the scope of changes depend
+    on the individual agreement. Requests beyond the agreed scope
+    may require additional time or payment.</p>
+
+    <h3>4. Client Responsibilities</h3>
+    <p>Clients must provide accurate project details and have
+    permission to use any text, images, music, video or other
+    materials they supply.</p>
+
+    <h3>5. Intellectual Property</h3>
+    <p>Ownership and usage rights for final deliverables will
+    follow the written agreement. Third-party assets remain
+    subject to their respective licences. Unpaid or unfinished
+    work is not automatically transferred to the client.</p>
+
+    <h3>6. Delivery and Delays</h3>
+    <p>Estimated deadlines depend on receiving the required
+    information and feedback on time. Unexpected changes may
+    require a revised delivery date.</p>
+
+    <h3>7. Cancellations and Refunds</h3>
+    <p>Cancellation and refund requests will be handled according
+    to the agreed project terms and applicable law. Work already
+    completed may affect the amount refundable.</p>
+
+    <h3>8. Acceptable Use</h3>
+    <p>Clients may not request unlawful, fraudulent or infringing
+    material. ASPECTY may decline work that violates applicable
+    law or platform policies.</p>
+
+    <h3>9. Limitation of Liability</h3>
+    <p>To the extent permitted by applicable law, ASPECTY is not
+    responsible for indirect losses caused by the use of delivered
+    work. Nothing in these terms excludes liability that cannot
+    legally be excluded.</p>
+
+    <h3>10. Changes to These Terms</h3>
+    <p>These terms may be updated when necessary. The terms
+    applicable to a project should be confirmed with the client
+    before the project begins.</p>
+
+    <h3>11. Contact</h3>
+    <p>For questions about these terms, contact
+    <a class="email" href="mailto:sonamlambha1990@gmail.com">
+    sonamlambha1990@gmail.com</a>.</p>
+  </div>
+
+  <p style="margin-top:18px;font-size:13px">
+    These terms are a general starting template, not legal advice.
+    Review them for your location, business model and the rules
+    of any platform you use before publishing.
+  </p>
+</section>
+
+<section class="container" id="contact">
+  <div class="tag">Let's work together</div>
+  <h2>Have a project in mind?</h2>
+  <p>Tell us what you need, and let's discuss how ASPECTY
+  can help bring your idea to life.</p>
+
+  <div class="card">
+    <h3>Contact ASPECTY</h3>
+    <p>Email is the easiest way to get in touch.</p>
+    <p>
+      <a class="email"
+         href="mailto:sonamlambha1990@gmail.com?subject=ASPECTY%20Project%20Enquiry">
+         sonamlambha1990@gmail.com
+      </a>
+    </p>
+    <div class="buttons">
+      <a class="btn" href="mailto:sonamlambha1990@gmail.com?subject=ASPECTY%20Project%20Enquiry">
+        Send an Email ↗
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="logo">ASPECT<span style="color:#67e8f9">Y</span></div>
+  <p style="margin:10px 0">Creative services for your digital future.</p>
+  <div>
+    <a href="#services">Services</a>
+    <a href="#logo-rules">Logo Rules</a>
+    <a href="#terms">Terms of Service</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <p style="margin-top:16px">
+    © <span id="year">2026</span> ASPECTY. All rights reserved.
+  </p>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+</script>
+
+</body>
+</html>
